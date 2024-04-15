@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="length1"></p><hr>
+    <p id="slice1"></p><hr>
+    <p id="replace1">Please Visit Microsoft!</p><hr>
+    <p id="upper1">Hello World!</p><hr>
+    <p id="concat"></p><hr>
+    <p id="charat"></p><hr>
+    <p id="charcodeat"></p><hr>
+    <p id="sta"></p><hr>
+    <button onclick="rep()">click To Replace String</button><br><br><hr>
+    <button onclick="upper()">Click To Convert String in upper Case</button><br><br><hr>
+    <button onclick="trim1()">Click To Use Trim</button><hr>
+    <script>
+        let text="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("length1").innerHTML="The Length of text variable is:"+text.length;
+    </script>
+    <script>
+        let str="Apple, Banana ,Kiwi";
+        document.getElementById("slice1").innerHTML="String After slice:"+str.slice(7,13);
+    </script>
+    <script>
+        function rep(){
+            let text=document.getElementById("replace1").innerHTML;
+            document.getElementById("replace1").innerHTML=text.replace("Microsoft","W3Schools");
+        }
+    </script>
+    <script>
+        function upper(){
+            let text1=document.getElementById("upper1").innerHTML;
+            document.getElementById("upper1").innerHTML=text1.toUpperCase();
+        }
+    </script>
+    <script>
+        let text2="speed";
+        let text3="computers";
+        let text4=text2.concat("",text3);
+        document.getElementById("concat").innerHTML=text4;
+    </script>
+    <script>
+        function trim1(){
+            let textt="Hello World!";
+            alert(textt.trim());
+        }
+    </script>
+    <script>
+        var ch="HELLO WORLD";
+        document.getElementById("charat").innerHTML=ch.charAt(0);
+    </script>
+    <script>
+        let cha="HELLO WORLD";
+        document.getElementById("charcodeat").innerHTML=cha.charCodeAt(0);
+    </script>
+    <script>
+        let sa="a,b,c,d,e,f";
+        const myArray=sa.split(",");
+        document.getElementById("sta").innerHTML=myArray[0];
+    </script>
+</body>
+</html>

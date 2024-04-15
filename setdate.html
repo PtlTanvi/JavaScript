@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="setyear"></p><hr>
+    <p id="setmonth"></p><hr>
+    <p id="setdate"></p><hr>
+    <p id="sethour"></p><hr>
+    <p id="setminute"></p><hr>
+    <p id="setsecond"></p><hr>
+    <script>
+        const d=new Date();
+        d.setFullYear(2020);
+        document.getElementById("setyear").innerHTML=d;
+    </script>
+    <script>
+        const d1=new Date();
+        d1.setDate(11);
+        document.getElementById("setmonth").innerHTML=d1;
+    </script>
+    <script>
+        const d2=new Date();
+        d2.setDate(25);
+        document.getElementById("setdate").innerHTML=d2;
+    </script>
+    <script>
+        const d3=new Date();
+        d3.setHours(18);
+        document.getElementById("sethour").innerHTML=d3;
+    </script>
+    <script>
+        const d4=new Date();
+        d4.setMinutes(51);
+        document.getElementById("setminute").innerHTML=d4;
+    </script>
+    <script>
+        const d5=new Date();
+        d5.setSeconds(35);
+        document.getElementById("setsecond").innerHTML=d5;
+    </script>
+</body>
+</html>

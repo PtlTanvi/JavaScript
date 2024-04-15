@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The internal clock javascript counts from midnight January 1,1970.</p>
+    <p id="time1"></p><hr>
+    <p id="year1"></p><hr>
+    <p id="month1"></p><hr>
+    <p id="date1"></p><hr>
+    <p id="hour1"></p><hr>
+    <p id="minute1"></p><hr>
+    <p id="second1"></p><hr>
+    <p id="day1"></p><hr>
+    <script>
+        const d=new Date();
+        document.getElementById("time1").innerHTML="The getTime()function returns the number of milliseconds since then:"+d.getTime();
+    </script>
+    <script>
+        const d1=new Date();
+        document.getElementById("year1").innerHTML="Current Year is:"+d1.getFullYear();
+    </script>
+    <script>
+        const d2=new Date();
+        document.getElementById("month1").innerHTML=d2.getMonth()+1;
+    </script>
+    <script>
+        const d3=new Date();
+        document.getElementById("date1").innerHTML="Today the date is:"+d3.getDate();
+    </script>
+    <script>
+        const d4=new Date();
+        document.getElementById("hour1").innerHTML="Hour is:"+d4.getHours();
+    </script>
+    <script>
+        const d5=new Date();
+        document.getElementById("minute1").innerHTML="Minute is:"+d5.getMinutes();
+    </script>
+    <script>
+        const d6=new Date();
+        document.getElementById("second1").innerHTML="Second is:"+d6.getSeconds();
+    </script>
+    <script>
+        const d7=new Date();
+        document.getElementById("day1").innerHTML="day is:"+d7.getDay();
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="S A" style="margin: 50px auto;width: 300px;"></h1>
+    <h1 id="Add A" style="margin: 50px auto;width: 300px;"></h1>
+    <h1 id="Sub A" style="margin: 50px auto;width: 300px;"></h1>
+    <h1 id="Mul A" style="margin: 50px auto;width: 300px;"></h1>
+    <h1 id="Div A" style="margin: 50px auto;width: 300px;"></h1>
+    <h1 id="Mod A" style="margin: 50px auto;width: 300px;"></h1>
+    <script type="text/javascript">
+        var A=5;
+        var B=A;
+        document.getElementById('S A').innerHTML=B;
+
+        var a=5;
+        var b=6;
+        b+=a;
+        document.getElementById("Add A").innerHTML=b;
+
+        var x=5;
+        var y=6;
+        y-=x;
+        document.getElementById("Sub A").innerHTML=y;
+
+        var X=5;
+        var Y=6;
+        Y*=X;
+        document.getElementById("Mul A").innerHTML=Y;
+
+        var C=3;
+        var D=6;
+        D/=C;
+        document.getElementById("Div A").innerHTML=D;
+
+        var c=6;
+        var d=31;
+        d%=c;
+        document.getElementById("Mod A").innerHTML=d;
+    </script>
+</body>
+</html>
