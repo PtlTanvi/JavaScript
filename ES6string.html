@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="sw"></p>
+    <p id="ew"></p>
+    <p id="ma"></p>
+    <p id="ak"></p>
+    <p id="fn"></p>
+    <p id="fi"></p>
+    <script>
+        let text="Hello world,Welcome to the universe.";
+        document.getElementById("demo").innerHTML=text.includes("world");
+    </script>
+    <script>
+        let text1="Hello world,Welcome to the universe.";
+        document.getElementById("sw").innerHTML=text1.startsWith("Hello");
+    </script>
+    <script>
+        let text2="John Doe";
+        document.getElementById("ew").innerHTML=text2.endsWith("Doe");
+    </script>
+    <script>
+        const myArr=Array.from("ABCDEFG");
+        document.getElementById("ma").innerHTML=myArr;
+    </script>
+    <script>
+        const fruits=["Banana","Orange","Apple","Mango"];
+        const keys=fruits.keys();
+        let text3="";
+        for(let x of keys){
+            text3 +=x+"<br>";
+        }
+        document.getElementById("ak").innerHTML=text3;
+    </script>
+    <script>
+        const numbers=[4,9,16,25,29];
+        let first=numbers.find(myFunction);
+        document.getElementById("fn").innerHTML="First number over 18 is"+ first;
+        function myFunction(value,index,array){
+            return value>18;
+        }
+    </script>
+    <script>
+        const numbers1=[4,9,16,25,29];
+        document.getElementById("fi").innerHTML="First number over 18 has index"+numbers1.findIndex(myFunction);
+        function myFunction(value,index,array){
+            return value>18;
+        }
+    </script>
+</body>
+</html>
